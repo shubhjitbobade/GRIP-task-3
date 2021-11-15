@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>donateform</title>
+    <link rel="icon" href="/PAYMENT_GATEWAY_INTEGRATION/img/fevicon.png" type="image/png">
+    <link rel="stylesheet" href="/PAYMENT_GATEWAY_INTEGRATION/css/style.css">
+    <link rel="stylesheet" href="/PAYMENT_GATEWAY_INTEGRATION//css/bootstrap.css">
+    <link rel="stylesheet" href="/PAYMENT_GATEWAY_INTEGRATION/css/responsive.css">
+    <script src="https://kit.fontawesome.com/e715b8a5ee.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-image: url("img/home.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .form {
+            border-radius: 5px;
+            background-color: #ccc;
+            padding: 20px;
+            width: 50%;
+            margin-top: 8%;
+            margin-right: 5%;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header_area">
+        <div class="main_menu">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand logo_h" href="index.html" style="color:black;font-size:25px;font-weight:600;"><b>DONATE</b></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'" style="color:black;">Home</a></li>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <li class="nav-item"><a class="nav-link" href="about.html" onMouseOver="this.style.color='orange'" onMouseOut="this.style.color='black'" style="color:black;">About</a></li>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li> &nbsp;&nbsp;&nbsp;&nbsp;
+                            <li class="nav-item"><a class="nav-link" href="contacthere.html" onMouseOver="this.style.color='orange'" onMouseOut="this.style.color='black'" style="color:black;">Contact</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="form">
+        <h3 style="text-align: center;">Doner details</h3>
+        <form action="/action_page.php">
+            <label for="fname"><i class="fas fa-user "></i>&nbsp;  Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+            <label for="mobile-no">  <i class="fas fa-mobile"></i>&nbsp; Mobile No</label>
+            <input type="text" id="mobile-no" name="mobile-no" placeholder="Your mobile number.." required>
+
+            <label for="fname"><i class="fas fa-envelope"></i>&nbsp;  E-mail</label>
+            <input type="text" id="mail" name="mail" placeholder="Your E-mail.." required>
+
+            <label for="lname"><i class="fas fa-rupee-sign"></i>&nbsp;  Amount</label>
+            <input type="text" id="amount" name="amount" placeholder="Entre amount.." required>
+
+            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_ILayDBnnZMZ2mx" async>
+            </script>
+        </form>
+    </div>
+
+</body>
+
+</html>

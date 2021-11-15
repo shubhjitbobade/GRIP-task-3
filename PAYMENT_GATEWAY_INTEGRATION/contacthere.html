@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/e715b8a5ee.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/PAYMENT_GATEWAY_INTEGRATION/img/fevicon.png" type="image/png">
+    <link rel="stylesheet" href="/PAYMENT_GATEWAY_INTEGRATION/css/style.css">
+    <link rel="stylesheet" href="/PAYMENT_GATEWAY_INTEGRATION//css/bootstrap.css">
+    <link rel="stylesheet" href="/PAYMENT_GATEWAY_INTEGRATION/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact</title>
+    <style>
+        body {
+            background-image: url("img/home.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        .form {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 8%;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function validation() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+
+            if (name == "") {
+                alert("Please Enter Name");
+            } else if (email == "") {
+                alert("Please Enter Email Id");
+            } else if (subject == "") {
+                alert("Please Enter subject");
+            } else if (message == "") {
+                alert("Please Write Message");
+            } else {
+                alert("Message Send Successfully");
+            }
+        }
+    </script>
+
+    <header class="header_area">
+        <div class="main_menu">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+
+                        <a class="navbar-brand logo_h" href="index.html" style="color:white;font-size:25px;font-weight:600;">DONATE</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html" style="color:rgb(255, 255, 255);" onMouseOver="this.style.color='orange'" onMouseOut="this.style.color='white'">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html" style="color:rgb(255, 255, 255);" onMouseOver="this.style.color='orange'" onMouseOut="this.style.color='white'">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+                            <li class="nav-item active"><a class="nav-link" style="color:rgb(255, 255, 255);">Contact</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="contact_area section_gap" style="align-items: center;">
+
+
+        <div class="form">
+            <h3 style="text-align: center;">contact Us</h3>
+            <form action="/action_page.php">
+                <label for="fname"><i class="fas fa-user "></i>&nbsp;  Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+                <label for="fname"><i class="fas fa-envelope"></i>&nbsp;  E-mail</label>
+                <input type="text" id="mail" name="mail" placeholder="Your E-mail.." required>
+
+                <label for="mobile-no">  <i class="fas fa-mobile"></i>&nbsp; Mobile No</label>
+                <input type="text" id="mobile-no" name="mobile-no" placeholder="Your mobile number.." required>
+
+                <label for="lname"><i class="fas fa-comments"></i>&nbsp;  Message</label>
+                <input type="text" id="amount" name="amount" placeholder="Entre amount.." required>
+
+                </select>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
